@@ -8,11 +8,11 @@ export class NewsapiService {
 
   constructor(private http:HttpClient) { }
 
-  topheadlinesapi='https://newsapi.org/v2/top-headlines?country=in&apiKey=03937229c17d4f9b84b5c3bacb7606bc';
+   topheadlinesapi = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=03937229c17d4f9b84b5c3bacb7606bc';
 
   entertainment='https://newsapi.org/v2/top-headlines?country=us&category=entertainment&apiKey=03937229c17d4f9b84b5c3bacb7606bc';
 
-  tech='https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=03937229c17d4f9b84b5c3bacb7606bc'
+ tech='https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=03937229c17d4f9b84b5c3bacb7606bc';
 
 headlines():Observable<any>{
   return this.http.get(this.topheadlinesapi)
